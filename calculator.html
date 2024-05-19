@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+    }
+
+    .title {
+      background-color: darkmagenta;
+      max-width: 10rem;
+      color: white;
+    }
+
+    .grey-button {
+      background-color: rgb(51, 51, 51);
+      height: 60px;
+    width: 60px;
+    border-radius: 60px;
+      color: white;
+      border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 5px;
+    }
+
+    .yellow-button {
+      background-color: rgb(254, 160, 10);
+      height: 60px;
+    width: 60px;
+    border-radius: 60px;
+      color: white;
+      border: none;
+    font-size: 26px;
+    cursor: pointer;
+    margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <p class="title">Calculator</p>
+
+  <button class="grey-button" onclick="calculation += '1'; console.log(calculation);">1</button>
+  <button class="grey-button" onclick="calculation += '2'; console.log(calculation);">2</button>
+  <button class="grey-button" onclick="calculation += '3'; console.log(calculation);">3</button>
+  <button class="yellow-button" onclick="calculation += '+'; console.log(calculation);">+</button>
+
+  <p>
+    <button class="grey-button" onclick="calculation += '4'; console.log(calculation);">4</button>
+    <button class="grey-button" onclick="calculation += '5'; console.log(calculation);">5</button>
+    <button class="grey-button" onclick="calculation += '6'; console.log(calculation);">6</button>
+    <button class="yellow-button" onclick="calculation += '-'; console.log(calculation);">-</button>
+  </p>
+
+  <p>
+    <button class="grey-button" onclick="calculation += '7'; console.log(calculation);">7</button>
+    <button class="grey-button" onclick="calculation += '8'; console.log(calculation);">8</button>
+    <button class="grey-button" onclick="calculation += '9'; console.log(calculation);">9</button>
+    <button class="yellow-button" onclick="calculation += '*'; console.log(calculation);">*</button>
+  </p>
+
+  <p>
+    <button class="grey-button" onclick="calculation += '0'; console.log(calculation);">0</button>
+    <button class="grey-button" onclick="calculation += '.'; console.log(calculation);">.</button>
+    <button class="grey-button" onclick="console.log(eval(calculation)); calculation = '';">=</button>
+    <button class="yellow-button" onclick="calculation += '&divide;'; console.log(calculation);">÷</button>
+  </p>
+
+  <p>
+    <button class="grey-button" onclick="calculation = ''; console.log(calculation);">clear</button>
+  </p>
+
+  <script>
+    let calculation = "";
+  </script>
+</body>
+</html>
